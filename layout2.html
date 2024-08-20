@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>22653881_Phạm Thị Cẩm Vy</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+      
+        #container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "section aside"
+                "footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        header {
+            grid-area: header;
+            background-color: #ff7272;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #e1fa7c;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            grid-area: section;
+            background-color: #a8ddec;
+            padding: 10px;
+        }
+        aside {
+            grid-area: aside;
+            background-color: #8555b6;
+            padding: 10px;
+            
+        }
+        footer {
+            grid-area: footer;
+            background-color: #cc3e5d;
+            padding: 10px;
+            text-align: center;
+        }
+        article {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <header>
+        <h1>Đầu trang</h1>
+    </header>
+    
+    <nav>
+        <p> Menu</p>
+    </nav>
+    
+    <section>
+   
+        <article>
+            <p>Bài viết 1</p>
+        </article>
+        <article>
+            <p>Bài viết 2</p>
+        </article>
+    </section>
+    
+    <aside>
+        <section>
+            <p>Phần phụ 1</p>
+           
+        </section>
+        <section>
+            <p> Phần phụ 2</p>
+        
+        </section>
+    </aside>
+    
+    <footer>
+        <h2>Chân trang</p>
+    </footer>
+</div>
+
+</body>
+</html>
