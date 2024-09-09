@@ -1,0 +1,109 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wrapper {
+        width: 830px;
+        margin: auto;
+    }
+    
+    header {
+        border-bottom: 2px solid orange;
+        margin-right: 10px;
+    }
+    
+    .header-logo {
+        text-align: right;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+    .content {
+        display: flex;
+        margin-right: 10px;
+    }
+    
+    .left-background {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .background-img {
+        height: 165px;
+    }
+    
+    .left-menu ul li {
+        position: relative;
+        list-style-type: none;
+        color: rgb(17, 17, 128);
+        margin: 10px;
+    }
+    
+    .li-border {
+        position: relative;
+        border-bottom: 2px dashed rgb(174, 88, 31);
+        width: 150px;
+    }
+    
+    .right {
+        margin-left: 40px;
+    }
+    
+    .title {
+        font-weight: bold;
+        color: orange;
+        font-size: 25px;
+        margin: 20px;
+    }
+    
+    .text {
+        font-size: 17px;
+        margin: 20px;
+        color: purple;
+    }
+    
+    .border-container {
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    
+    .border {
+        border-top: 3px solid orange;
+        border-left: 3px solid orange;
+        border-bottom: 3px solid saddlebrown;
+        border-right: 3px solid saddlebrown;
+        background-color: beige;
+        height: 280px;
+        width: 280px;
+    }
+    
+    .border-title {
+        font-size: 20px;
+        color: orange;
+        font-weight: bold;
+        margin: 10px;
+    }
+    
+    .border-text {
+        font-size: 17px;
+        color: purple;
+        margin: 10px;
+        margin-left: 50px;
+    }
+    
+    footer {
+        text-align: center;
+        border-top: 2px solid orange;
+    }
+    
+    .footer-text {
+        text-transform: uppercase;
+        color: orange;
+        margin-top: 5px;
+        margin-left: 10px;
+        line-height: 30px;
+    }
