@@ -42,7 +42,7 @@ nav {
 }
 
 .line-img {
-    background-image: url(img/line.png)
+    background-image: url(../img/line.png);
     background-repeat: repeat-x;
     background-size: 200px;
     height: 180px;
@@ -148,7 +148,7 @@ li {
     height: 50px;
 }
 
- .container-aside-text {
+.container-aside-text {
 }
 
 .aside_text {
@@ -158,7 +158,7 @@ li {
 
 footer {
     position: relative;
-    background-image: url(img/footer.png);
+    background-image: url(../img/footer.png);
     background-position: top center;
     background-repeat: repeat-x;
     background-size: 150px;
