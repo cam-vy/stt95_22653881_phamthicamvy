@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <script src="../js/bai1b.js"></script>
+    <div class="container mt-5">
+        <h4 class="display-3- fw-bold">Đăng ký tài khoản Facebook</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="table-responsive">
+                    <table class="table text-center table-borderless table-info">
+                        <tr>
+                            <td><input type="text" class="form-control" placeholder="Họ" id="hoInput">
+                                <span id="hoWarning" class="text-danger"></span></td>
+                            <td><input type="text" class="form-control" placeholder="Tên" id="tenInput">
+                                <span id="tenWarning" class="text-danger"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="email" class="form-control" placeholder="Email đăng nhập" id="emailInput">
+                                <span id="emailWarning" class="text-danger"></span></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="email" class="form-control" placeholder="Nhập lại Email" id="vEmailInput">
+                                <span id="vEmailWarning" class="text-danger"></span></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="password" class="form-control" placeholder="Mật khẩu" id="passwordInput">
+                                <span id="passwordWarning" class="text-danger"></span></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" class="form-control" placeholder="Năm sinh" id="yearInput">
+                                <span id="yearWarning" class="text-danger"></span></td>
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <button class="btn btn-primary" id="registerBtn">Đăng Ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

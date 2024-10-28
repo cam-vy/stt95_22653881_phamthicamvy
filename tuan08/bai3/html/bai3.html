@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        thead,
+        tbody,
+        tfoot,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../js/bai3.js"></script>
+    <div class="container my-5">
+        <div class="row my-3">
+            <div class="col-2">
+                <label for="name" c>Họ tên:</label>
+            </div>
+            <div class="col-10">
+                <input type="text" id="name" class="form-control w-50" autofocus>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-2">
+                <label for="lop">Lớp:</label>
+            </div>
+            <div class="col-10">
+                <select id="lop" class="form-select w-50">
+                    <option value="1">Đại học kỹ thuật phần mềm 19A</option>
+                    <option value="2">Đại học kỹ thuật phần mềm 19B</option>
+                    <option value="3">Đại học kỹ thuật phần mềm 19C</option>
+                </select>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-2">
+                <label for="mon">Môn học:</label>
+            </div>
+            <div class="col-10">
+                <select id="mon" class="form-select w-50">
+                    <option value="a">Lập trình hướng đối tượng</option>
+                    <option value="b">Hệ thống về công nghệ Web</option>
+                    <option value="c">Cấu trúc dữ liệu và giải thuật</option>
+                </select>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-2">
+                <label>Loại:</label>
+            </div>
+            <div class="col-10 d-flex align-items-center">
+                <input type="radio" name="loai" id="lythuyet" class="form-check-input">
+                <label for="lythuyet" class="form-check-label mx-3">Lý thuyết</label>
+                <input type="radio" name="loai" id="thuchanh" class="form-check-input">
+                <label for="thuchanh" class="form-check-label mx-3">Thực hành</label>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-2">
+                <button class="btn bg-primary border border-2" id="btnSign" disabled>Đăng ký</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <table class="table table-warning border border-2 border-dark text-center fw-bold">
+                    <thead>
+                        <tr>
+                            <td>Họ tên</td>
+                            <td>Lớp</td>
+                            <td>Môn học đăng ký</td>
+                            <td>Loại</td>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

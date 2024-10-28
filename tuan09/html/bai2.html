@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        #topImg {
+            height: 300px;
+            background-position: center;
+            background-image: url(../img/topImage.png);
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="../js/bai2.js"></script>
+    <div class="container">
+        <div class="container-fluid" id="topImg"></div>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" href="#" aria-current="page">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#" data-bs-toggle="modal" data-bs-target="#modalId">
+                Đăng ký
+              </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            THÔNG TIN HỌC VIÊN
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td><label for="maTourInput" class="form-label">Mã tour:</label></td>
+                                    <td><input type="text" id="maTourInput" class="form-control">
+                                        <span id="maTourWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="hanhTrinhInput" class="form-label">Hành trình:</label></td>
+                                    <td><input type="text" id="hanhTrinhInput" class="form-control">
+                                        <span id="hanhTrinhWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="ngayKhoiHanhInput" class="form-label">Ngày khởi hành:</label></td>
+                                    <td><input type="date" id="ngayKhoiHanhInput" class="form-control">
+                                        <span id="ngayKhoiHanhWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="thoiGianInput" class="form-label">Thời gian:</label></td>
+                                    <td><input type="text" id="thoiGianInput" class="form-control">
+                                        <span id="thoiGianWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="giaTourInput" class="form-label">Giá tour:</label></td>
+                                    <td><input type="text" id="giaTourInput" class="form-control">
+                                        <span id="giaTourWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="anhDaiDienInput" class="form-label">Ảnh đại diện:</label></td>
+                                    <td><input type="file" id="anhDaiDienInput" class="form-control" accept="image/*,.pdf">
+                                        <span id="anhDaiDienWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success w-100" id="submitBtn">
+              Lưu
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table" id="danhSachTable">
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Mã tour</th>
+                        <th scope="col">Hành trình</th>
+                        <th scope="col">Ngày khởi hành</th>
+                        <th scope="col">Thời gian</th>
+                        <th scope="col">Giá tour</th>
+                        <th scope="col">Ảnh đại diện</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        #topImg {
+            height: 300px;
+            background-position: center;
+            background-image: url(../img/images.png);
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="../js/bai1.js"></script>
+    <div class="container">
+        <div class="container-fluid" id="topImg"></div>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" href="#" aria-current="page">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#" data-bs-toggle="modal" data-bs-target="#modalId">
+                Đăng ký
+              </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            THÔNG TIN HỌC VIÊN
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th><label for="hoTenInput">Họ tên:</label></th>
+                                    <td><input type="text" class="form-control" id="hoTenInput">
+                                        <span id="hoTenWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th><label for="dienThoaiInput">Điện thoại:</label></th>
+                                    <td><input type="tel" class="form-control" id="dienThoaiInput">
+                                        <span id="dienThoaiWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th><label for="ngaySinhInput">Ngày sinh:</label></th>
+                                    <td><input type="date" class="form-control" id="ngaySinhInput">
+                                        <span id="ngaySinhWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th><label for="diaChiInput">Địa chỉ:</label></th>
+                                    <td><input type="tel" class="form-control" id="diaChiInput">
+                                        <span id="diaChiWarning" class="text-danger"></span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th><label for="khoaHocSelector">Bạn muốn tham <br> gia khóa nào?</label></th>
+                                    <td><select name="KhoaHoc" id="khoaHocSelector" class="form-select">
+                      <option value="Khóa 2 tuần">Khóa 2 tuần</option>
+                      <option value="Khóa 4 tuần">Khóa 4 tuần</option>
+                      <option value="Khóa 6 tuần">Khóa 6 tuần</option>
+                    </select>
+                                        <span id="diaChiWarning" class="text-danger"></span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th><label for="hocPhiDisplay">Học phí</label></th>
+                                    <td>
+                                        <input type="text" id="hocPhiDisplay" class="form-control" disabled>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th><label for="anhDaiDienInput">Ảnh đại diện:</label></th>
+                                    <td><input type="text" class="form-control" id="anhDaiDienInput">
+                                        <span id="anhDaiDienWarning" class="text-danger">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="">Giới tính:</label></th>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gioiTinh" value="Nam" />
+                                            <label class="form-check-label" for="Nam">Nam</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gioiTinh" value="Nữ" />
+                                            <label class="form-check-label" for="Nữ">
+                        Nữ
+                      </label>
+                                        </div>
+                                        <span id="gioiTinhWarning" class="text-danger">*</span>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success w-100" id="submitBtn">
+              Lưu
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table" id="danhSachTable">
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Họ tên</th>
+                        <th scope="col">Giới tính</th>
+                        <th scope="col">Ngày sinh</th>
+                        <th scope="col">Địa chỉ</th>
+                        <th scope="col">Khóa học</th>
+                        <th scope="col">Học phí</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
