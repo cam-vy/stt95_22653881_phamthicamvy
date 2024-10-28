@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        table{
+            text-align: center;
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+            color: pink;
+        }
+        td{
+            border: 1px solid black; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="my-5">
+            <tr>
+                <th colspan="3" style="width: 500px;">DANH SÁCH SINH VIÊN</th>
+            </tr>
+            <tr>
+                <td>MSSV</td>
+                <td>Tên</td>
+                <td>Lớp</td>
+            </tr>
+            <tr>
+                <td id="MSSV"></td>
+                <td id="hoTen"></td>
+                <td id="lop"></td>
+            </tr>
+        </table>
+        <button id="btnMSSV" type="button">Nhập mssv</button>
+        <button id="btnHoTen" type="button">Nhập Họ và tên</button>
+        <button id="btnLop" type="button">Nhập Lớp</button>
+    </div>
+    <script src="../js/bai1.js"></script>
+</body>
+</html>

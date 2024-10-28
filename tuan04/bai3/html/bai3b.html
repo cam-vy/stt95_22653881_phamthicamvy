@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#dangNhap">Đăng nhập</button>
+        <div class="modal" id="dangNhap">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <button type="button" class="btn fs-5" style="color: orange; border-bottom: 2px solid orange;">ĐĂNG NHẬP</button>
+                                /
+                            <button type="button" class="btn fs-5" data-bs-toggle="modal" data-bs-target="#dangKy">ĐĂNG KÝ</button>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-secondary mt-0">
+                            Vui lòng đăng nhập trước khi mua vé để tích lũy điểm cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema
+                        </p>
+                        <form action="">
+                            <input class="form-control mb-2" type="email" name="" id="" placeholder="Email">
+                            <input class="form-control mb-2" type="password" name="" id="" placeholder="Mật khẩu">
+                        </form>
+                        <a class="text-decoration-none text-secondary" href="">Quên mật khẩu?</a>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button class="btn w-100" style="background-color: orange;">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="dangKy">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <button type="button" class="btn fs-5" data-bs-toggle="modal" data-bs-target="#dangNhap">ĐĂNG NHẬP</button>
+                                /
+                            <button type="button" class="btn fs-5" style="color: orange; border-bottom: 2px solid orange;">ĐĂNG KÝ</button>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Họ tên">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Số điện thoại">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn giới tính</option>
+                                        <option value="">Nam</option>
+                                        <option value="">Nữ</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="email" name="" id="" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input type="password" name="" id="" class="form-control" placeholder="Mật khẩu">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input type="password" name="" id="" class="form-control" placeholder="Xác nhận mật khẩu">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn thành phố</option>
+                                        <option value="">Thành phố Hồ Chí Minh</option>
+                                        <option value="">Thành phố Huế</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Quận</option>
+                                        <option value="">Quận 1</option>
+                                        <option value="">Quận 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Địa chỉ">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="date" name="" id="" class="form-control" placeholder="Chọn ngày">
+                                </div>
+                                <div class="col-12 mb-3 d-flex">
+                                    <label class="form-label w-50" for="">Mã CapCha tại đây:</label>
+                                    <input type="text" name="" id="" class="form-control w-50" placeholder="Nhập mã capcha">
+                                </div>
+                                <div class="col-12 text-secondary">
+                                    Tôi đã đọc và đồng ý với <a style="color: orange;" class="fw-bold text-decoration-none" href="">CHÍNH SÁCH</a> của chương trình.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn w-100" style="background-color: orange;">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

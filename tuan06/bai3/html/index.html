@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- <script>
+        $(document).ready(function() {
+            var t;
+
+            function Play() {
+                var arr = new Array();
+                arr[0] = "../IMG/st1.jpg";
+                arr[1] = "../IMG/st2.jpg";
+                arr[2] = "../IMG/st3.jpg";
+                arr[3] = "../IMG/st4.jpg";
+                var i = Math.round(Math.random() * 3);
+                $('#idhimg').attr('src', arr[i]);
+                t = setTimeout(Play, 1000);
+            }
+
+            function Stop() {
+                clearTimeout(t);
+            }
+            $('#btnPlay').click(function() {
+                Play();
+            })
+
+            $('#btnStop').click(function() {
+                Stop();
+            })
+        })
+    </script> -->
+    <div class="container">
+        <img style="width: 300px; height: 200px;" src="../IMG/Yen_Bai_-_dogs_-_P1390010.jpg" alt="" id="idhimg">
+        <br>
+        <input type="button" name="Play" id="btnPlay" value="Change" onclick="play()">
+        <button id="btnStop" onclick="stop()">Stop</button>
+    </div>
+
+    <script>
+        var t;
+
+        function play() {
+            var idhimg = document.getElementById('idhimg');
+            let arr = new Array();
+            arr[0] = "../IMG/st1.jpg";
+            arr[1] = "../IMG/st2.jpg";
+            arr[2] = "../IMG/st3.jpg";
+            arr[3] = "../IMG/st4.jpg";
+            let i = Math.round(Math.random() * 3);
+            idhimg.src = arr[i];
+            t = setTimeout("play()", 1000);
+        }
+
+        function stop() {
+            clearTimeout(t);
+        }
+    </script>
+</body>
+
+</html>
