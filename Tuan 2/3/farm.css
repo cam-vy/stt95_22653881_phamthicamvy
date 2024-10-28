@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-image: url(Images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+.left {
+    border-right: 2px solid green;
+    margin-top: 20px;
+}
+
+.outer-border {
+    border-right: 3px solid rgb(70, 68, 68);
+    border-bottom: 3px solid rgb(70, 68, 68);
+    border-top: 3px solid rgb(248, 236, 236);
+    border-left: 3px solid rgb(248, 236, 236);
+}
+
+.inner-border {
+    padding: 10px;
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+}
+
+.menu {
+    background-color: white;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu-text1 {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.menu-text2 {
+    margin: 10px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(200, 61, 193);
+}
+
+.menu a:hover {
+    color: green;
+    border-bottom: 1px solid green;
+}
+
+.center-border-header {
+    background-color: green;
+    width: 550px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.header-header {
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-left: 70px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.center-text {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.center-img {
+    margin-right: 20px;
+    float: right;
+    height: 200px;
+}
+
+.center-border-title {
+    background-color: green;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.center-title {
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.center-section {
+    color: white;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-border {
+    border-bottom: 2px solid green;
+    margin: 3px;
+    margin-left: -20px;
+}
+
+.footer-text {
+    font-size: 17px;
+}
