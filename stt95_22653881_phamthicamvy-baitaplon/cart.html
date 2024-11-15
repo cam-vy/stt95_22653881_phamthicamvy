@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Giỏ hàng</title>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var menu = document.getElementById("myMenu");
+        var sticky = menu.offsetTop;
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav1">
+            <ul class="Chung">
+                <li>
+                    <div id="myTab" class="tab">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#select1">NEW ARRIVAL</a>
+                        <a href="#select2">QUICK SALE</a>
+                        <a href="#select3">SELLING PRODUCT</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Contact</a>
+                            <div class="dropdown-content">
+                                <a class="hotline" href="tel:19006089">ĐT: 19006089</a>
+                                <a class="hotline" href="mailto:Exclusive20@gmail.com">Email: Exclusive20@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ic"><span onclick="openNav()"><i class="fas fa-bars"></i></span></div>
+                </li>
+                <li class="phone">
+                    <span>Hotline:</span>
+                    <a href="tel:19006089">19006089</a>
+                </li>
+                <li class="phone">
+                    <span>Email:</span>
+                    <a href="mailto:Exclusive20@gmail.com">Exclusive20@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <ul class="Chung">
+                <li>
+                    <a id="myBtn" href="login.html"><i class="fas fa-user-alt"></i></a>
+                </li>
+                <li>
+                    <a href="cart.html"><i class="fas fa-cart-arrow-down"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="menu" id="myMenu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="image/logo5.png" alt="logo">
+                    </a>
+                </div>
+                <div class="main">
+                    <ul>
+                        <li class="link"><a href="index.html">Home</a></li>
+                        <li class="link"><a href="index6.html">Introduce</a></li>
+                        <li class="link"><a href="index2.html">Vintage</a></li>
+                        <div class="h2">
+                            <li class="link">
+                                <a href="index3.html">Street &ndash; Style</a>
+                                <div class="level">
+                                    <ul>
+                                        <li><a href="index3.html">Couple</a></li>
+                                        <li><a href="index3.html">Shirt</a></li>
+                                        <li><a href="index3.html">Pants</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="link"><a href="index4.html">Dress</a></li>
+                        <li class="link"><a href="index5.html">Instruct</a></li>
+                        <li>
+                            <div class="search">
+                                <input type="text" placeholder="Search..." name="search"/>
+                                <button type="submit" onclick="searchProducts()"><i class="fa fa-search"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1><strong>Giỏ hàng của bạn</strong></h1>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table">
+                <!-- Các sản phẩm sẽ được chèn tại đây -->
+            </tbody>
+        </table>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 id="total-amount">0đ</h3>
+            <a href="thanhtoan.html" class="btn btn-success">Thanh toán</a>
+        </div>
+    </div>
+
+    <footer>...</footer> <!-- Include your footer here -->
+
+    <script src="javascript/java.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartTable = document.getElementById("cart-table");
+            let totalAmount = 0;
+
+            // Xóa nội dung bảng trước khi hiển thị lại
+            cartTable.innerHTML = '';
+
+            cart.forEach(item => {
+                let row = document.createElement("tr");
+
+                // Tính tổng cho từng sản phẩm
+                let price = parseFloat(item.price.replace(/[^\d.-]/g, '')) || 0;
+                let quantity = item.quantity || 1; // Lấy số lượng
+                let totalItemPrice = price * quantity; // Tính tổng cho từng sản phẩm theo số lượng
+
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>
+                        <input type="number" min="1" class="form-control" value="${quantity}" onchange="updateQuantity('${item.name}', this.value)">
+                    </td>
+                    <td>${(price).toFixed(0)}.000đ</td>
+                    <td class="total-price" data-price="${totalItemPrice.toFixed(0)}">${(totalItemPrice).toFixed(0)}.000đ</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="removeFromCart('${item.name}')">Xóa</button>
+                    </td>
+                `;
+
+                cartTable.appendChild(row);
+
+                // Cộng dồn tổng tiền
+                totalAmount += totalItemPrice;
+            });
+
+            // Hiển thị tổng số tiền với đơn vị nghìn đồng
+            document.getElementById("total-amount").textContent = `${(totalAmount).toLocaleString()}.000đ`;
+        });
+
+        // Hàm xóa sản phẩm khỏi giỏ hàng
+        function removeFromCart(productName) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart = cart.filter(item => item.name !== productName);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            location.reload(); // Tải lại trang để cập nhật giỏ hàng
+        }
+
+        // Hàm cập nhật số lượng sản phẩm
+        function updateQuantity(productName, quantity) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const itemIndex = cart.findIndex(item => item.name === productName);
+
+            if (itemIndex > -1) {
+                cart[itemIndex].quantity = parseInt(quantity);
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                // Cập nhật tổng tiền cho sản phẩm
+                const price = parseFloat(cart[itemIndex].price.replace(/[^\d.-]/g, '')) || 0;
+                const totalItemPrice = price * quantity; // Tính tổng cho từng sản phẩm
+
+                // Cập nhật tổng giá trị sản phẩm trên giao diện
+                const row = document.querySelector(`tr:has(td:contains('${productName}'))`);
+                if (row) {
+                    const totalPriceCell = row.querySelector('.total-price');
+                    totalPriceCell.textContent = `${totalItemPrice.toFixed(0)}đ`;
+                    totalPriceCell.setAttribute('data-price', totalItemPrice.toFixed(0));
+                }
+
+                // Cập nhật tổng số tiền
+                updateTotalAmount();
+            }
+        }
+
+        // Hàm cập nhật tổng số tiền
+        function updateTotalAmount() {
+            const totalCells = document.querySelectorAll('.total-price');
+            let totalAmount = 0;
+
+            totalCells.forEach(cell => {
+                totalAmount += parseFloat(cell.getAttribute('data-price')) || 0;
+            });
+
+            document.getElementById("total-amount").textContent = `${(totalAmount).toLocaleString()}.000đ`;
+        }
+    </script>
+</body>
+</html>

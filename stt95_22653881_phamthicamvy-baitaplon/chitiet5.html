@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="image/logo1.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="javascript/java.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Exclusive</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav1">
+                <ul class="Chung">
+                    <li>
+                        <div id="myTab" class="tab">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#select1">NEW ARRIVAL</a>
+                            <a href="#select2">QUICK SALE</a>
+                            <a href="#select3">SELLING PRODUCT</a>
+                            <a class="tabMenu" href="index2.html">Vintage</a>
+                            <a class="tabMenu" href="index3.html">Street &ndash; Style</a>
+                            <a class="tabMenu" href="index4.html">Dress</a>
+                            <a class="tabMenu" href="index5.html">Instruct</a>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Contact</a>
+                                <div class="dropdown-content">
+                                    <a class="hotline" href="tel:19006089">ĐT: 19006089</a>
+                                    <a class="hotline" href="mailto:Exclusive20@gmail.com">Email: Exclusive20@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ic"><span onclick="openNav()"><i class="fas fa-bars"></i></span></div>
+                    </li>
+                    <li class="phone">
+                        <span>Hotline:</span>
+                        <a href="tel:19006089">19006089</a>
+                    </li>
+                    <li class="phone">
+                        <span>Email:</span>
+                        <a href="mailto:Exclusive20@gmail.com">Exclusive20@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul class="Chung">
+                    <li>
+                        <a id="myBtn"><i class="fas fa-user-alt"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fas fa-cart-arrow-down"></i></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <header>
+            <div class="menu" id="myMenu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="image/logo5.png" alt="logo">
+                    </a>
+                </div>
+                <div class="main">
+                    <ul>
+                        <li class="link"><a href="index.html">Home</a></li>
+                        <li class="link"><a href="index6.html">Introduce</a></li>
+                        <li class="link"><a href="index2.html">Vintage</a></li>
+                        <div class="h2">
+                            <li class="link">
+                                <a href="index3.html">Street &ndash; Style</a>
+                                <div class="level">
+                                    <ul>
+                                        <li><a href="index3.html">Couple</a></li>
+                                        <li><a href="index3.html">Shirt</a></li>
+                                        <li><a href="index3.html">Pants</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="link"><a href="index4.html">Dress</a></li>
+                        <li class="link"><a href="index5.html">Instruct</a></li>
+                        <li>
+                            <div class="search">
+                                    <input type="text" placeholder="Search..." name="search"/>
+                                    <button type="submit" onclick="searchProducts()"><i class="fa fa-search"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <body>
+	
+            <div class="container">
+                <div class="card">
+                    <div class="container-fliud">
+                        <div class="wrapper row">
+                            <div class="preview col-md-6">
+                                
+                                <div class="preview-pic tab-content">
+                                  <div class="tab-pane active" id="pic-1"><img src="image/c4.jpg" height="100%" width="100%" /></div>
+                                </div>
+                                <ul class="preview-thumbnail nav nav-tabs">
+                                
+                            </div>
+                            <div class="details col-md-6">
+                                <h3 class="product-title">Wonmen's fashion</h3>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="review-no">1550 lượt xem</span>
+                                </div>
+                                <p class="product-description">- Áo thun phông trắng là một lựa chọn phổ biến và tiện lợi cho mọi dịp.
+                                     Với màu trắng tinh khôi và thiết kế đơn giản, áo thun này dễ dàng phối hợp với nhiều loại quần và phụ kiện khác nhau, từ quần jeans đến quần short hay chân váy.
+                                      Chất liệu phông thoáng mát và thoải mái, phù hợp cho cả mùa xuân, hè và thu. Với giá cả phải chăng như vậy, 
+                                      áo thun phông trắng là một sự lựa chọn thông minh cho bất kỳ ai đang tìm kiếm một item thời trang cơ bản nhưng vẫn đẹp mắt và tiện lợi.</p>
+                                <h4 class="price">Giá: <span>175.000đ</span></h4>
+                                <p class="vote"><strong>95%</strong> người mua thích sản phẩm này! <strong>(1310 phiếu)</strong></p>
+                                <h5 class="sizes">sizes:
+                                    <span class="size" data-toggle="tooltip" title="small">s</span>
+                                    <span class="size" data-toggle="tooltip" title="medium">m</span>
+                                    <span class="size" data-toggle="tooltip" title="large">l</span>
+                                    <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+                                </h5>
+                                <h5 class="colors">colors:
+                                    <span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+                                    <span class="color green">black</span>
+                                    <span class="color white">white</span>
+                                    <span class="color blue">blue</span>
+                                </h5>
+                                <div class="action">
+                                    <button class="add-to-cart btn btn-default" type="button">Mua</button>
+                                    <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </body>
+        <footer>
+            <footer class="last1">
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="news">
+                    <div class="new">
+                        <p>Hỗ trợ khách hàng</p>
+                        <ul>
+                            <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Giới thiệu cửa hàng.</a></li>
+                            <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Hệ thống cửa hàng.</a></li>
+                            <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chương trình tích điểm.</a></li>
+                            <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chính sách đổi trả hàng.</a></li>
+                            <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chế độ bảo hành.</a></li>
+                        </ul>
+                    </div>
+                    <div class="new">
+                        <p>Chính sách vận chuyển</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> &nbsp;Thanh toán trực tiếp tiền hàng và chi phí vận chuyển khi nhận hàng (SHIP COD TOÀN QUỐC).</li>
+                            <li><i class="fas fa-check"></i> &nbsp;Chuyển khoản thanh toán trước toàn bộ tiền hàng và chi phí vận chuyển.</li>
+                        </ul>
+                    </div>
+                    <div class="new contact">
+                        <p>Liên hệ với chúng tôi</p>
+                        <ul class="lienhe">
+                            <li><i class="fab fa-facebook"></i> &nbsp;<a href="#">FANPAGE</a></li>
+                            <li><i class="fab fa-facebook-messenger"></i> &nbsp;<a href="#">INSTAGRAM</a></li>
+                            <li><i class="fab fa-instagram-square"></i> &nbsp;<a href="#">MESSENGES</a></li>
+                            <li><i class="fas fa-envelope-open"></i> &nbsp;<a href="#">EMAIL</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </footer>
+            <footer class="last2">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <p>Performed by QuocDai</p>
+            </footer>
+        </footer>
+    </body>
+</html>

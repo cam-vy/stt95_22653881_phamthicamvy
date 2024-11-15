@@ -1,0 +1,555 @@
+ *{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*TAB*/
+.tab {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .tab a {
+    padding: 10px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: left;
+    transition: 0.3s;
+  }
+  .tab a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+    text-decoration: none;
+  }
+a.hotline{
+    font-size: 20px;
+}
+a.tabMenu{
+    display: none;
+}
+div.ic span:hover {
+    color: rgb(243, 188, 36);
+    cursor: pointer;
+}
+  .tab .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+        /*MENU1*/
+        nav{
+            background-color: black;
+            color: whitesmoke;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        div.nav1{
+            width: 85%;
+            float: left;
+        }
+        div.nav2{
+            width: 15%;
+        }
+        div.nav2 > ul > li{
+            cursor: pointer;
+        }
+        ul.Chung{
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        ul.Chung > li{
+            padding: 5px 30px;
+            text-align: center;
+        }
+        ul.Chung > li > a{
+            color: whitesmoke;
+            text-decoration:none;
+        }
+        ul.Chung>a:hover{
+            color: rgb(243, 188, 36);
+        }
+        label{
+            color: #243452;
+            font-weight: 600;
+        }
+        form{
+            margin: 10px;
+        }
+
+
+        /*MENU2*/
+        div.menu{
+            z-index: 1;
+            background-color: rgb(243, 188, 36);
+            height: 75px;
+        }
+        div.main{
+            width: 90%;
+        }
+        div.main > ul{
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+        }
+        div.level > ul{
+            background-color: rgb(243, 188, 36);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: black;
+        }
+        div.main li{
+           text-align: center;
+           position: relative;
+           display: block;
+            width: 200px;
+            height: 75px;
+            line-height: 75px;
+        }
+        div.main a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            display: block;
+        }
+        div.main a:hover{
+            background-color: rgb(211, 164, 35);
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        div.level a{
+            display: block;
+        }
+        div.level a:hover{
+            background-color: #fff;
+            color:rgb(243, 188, 36) ;
+        }
+        div.level li{
+            border-bottom: 1px solid rgba(247, 218, 165, 0.26);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0;
+        }
+        div.level{
+            display: none;
+            position: absolute;
+            z-index: 2;
+        }
+        .h2{
+            font-size: 0!important;
+        }
+        div.h2 {
+            margin: 0;
+        }
+        .h2 :hover div.level{
+            display: block;
+        }
+
+        /*LOGO*/
+div.logo{
+    width: 10%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+div.logo img{
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+}
+        /*Search*/
+div.search{
+    width: 170%;
+    margin: 5px;
+}
+div.search button{
+    float: left;
+    width: 15%;
+    background-color: rgb(252, 224, 102);
+    border: 1px solid rgb(39, 38, 38);
+    margin-top: 19px;
+    height: 26px;
+    border-bottom: 5px;
+    cursor: pointer;
+    border-radius: 0px 4px 0px 0px;
+}
+div.search input{
+    width: 80%;
+    float: left;
+    height: 26px;
+    margin-top: 20px;
+    border: 1px solid rgb(39, 38, 38);
+    border-right: none;
+    text-align: left;
+    border-top: 5px;
+    color: brown;
+    border-radius: 0px 0px 0px 4px;
+}
+button[type=submit]>i{
+    position: absolute;
+    top: 30px;
+}
+/*Cố dịnh MENU*/
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.sticky + .body{
+    padding-top: 102px;
+}
+        /*BANNER*/
+        .carousel-inner img {
+            width: 100%;
+          }
+        .carousel-inner {
+            z-index: 0;
+        }
+        #demo{
+            z-index: 0;
+        }
+    /**SECTION*/
+    /*Thanh ngang*/
+div.thanh {
+    border: 2px solid brown;
+    height: 40px;
+    margin-top: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    color: brown;
+}
+div.thanh span{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+/*Product*/
+div.products{
+    display: flex;
+    height: 500px;
+    margin-top: 30px;
+}
+.img img {
+    width: 100%;
+    height: 390px;
+    top: 0;
+ }
+ .img img:hover{
+     transform: scale(1.5, 1.5);
+     transition: ease-in-out .15s;
+ }
+ .bb {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+ }
+ div.product img{
+    width: 100%;
+}
+div.product {
+    height: 430px;
+    padding: 5px;
+    width: 25%;
+    border: 1px solid #243452;
+    text-align: center;
+    border-radius: 1px;
+    margin:20px;
+    max-width: 500px;
+    border-bottom: 0;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.price {
+    padding: 5px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.name {
+    padding: 5px;
+    height: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+}
+div.product button{
+    border: none;
+    outline: 0;
+    padding: 6px;
+    color: #fff;
+    background-color: #243452c5;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+  }
+ .product button:hover {
+    background-color: #243452;
+    color: rgb(243, 188, 36);
+  }
+/*FOOTER1*/
+div.news{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+ }
+ div.new{
+    padding: 10px;
+    width: 35%;
+}
+div.new p{
+    text-align: center;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #243452;
+    font-weight: 600;
+}
+div.new ul{
+    list-style-type: none;
+    width: 100%;
+}
+div.new li{
+    padding: 5px 5px;
+    margin-left: 20px;
+}
+div.new a {
+    text-decoration: none;
+    color: black;
+}
+div.new a:hover {
+    border-bottom: 1px solid brown;
+    color: brown;
+}
+div.new i{
+    color: brown;
+    font-size: 20px;
+}
+footer.last2{
+    background-color: #000;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 45px;
+}
+footer.last2 a{
+    color: #fff;
+    font-size: 20px;
+    padding: 2px;
+}
+footer.last2 p{
+    color: rgb(243, 188, 36);
+    /* font-family: Verdana,sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*go to top*/
+#bttop{
+    background-color: rgb(243, 188, 36);
+    padding:0 15px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    display:none;
+    color:#fff;
+    font-size:40px;
+    }
+    #bttop:hover{
+    background:#ff6734
+    }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1024px){
+    div.main li{
+        width: 150px;
+    }
+    div.main ul{
+        padding: 0px
+    }
+    div.main a{
+        font-size: 16px;
+    }
+    div.search input{
+        width: 80%;
+    }
+    div.products {
+        height: 450px;
+        padding-top: 15px;
+    }
+    div.product{
+        height: 425px;
+        width: 25%;
+        padding: 0px;
+        margin: 10px;
+    }
+    .name{
+        font-size: 20px
+    }
+    div.hr{
+        padding-top: 30px;
+    }
+    div.new li {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    div.new{
+        padding: 0px;
+        margin-right: 0px;
+    }
+    div.news {
+        padding: 10px;
+    }
+    footer.last2{
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 922px)
+{
+    a.tabMenu{
+        display: block;
+    }
+    nav{
+        padding: 8px;
+    }
+    ul.Chung>li{
+        padding: 5px 17px;
+    }
+    div.main li.link{
+        display: none;
+    }
+    div.main li{
+        width: 250px;
+        padding-right: 80px;
+        margin-left: auto;
+    }
+    div.logo{
+        width: 15%;
+    }
+    div.search{
+        width: 175%;
+    }
+    div.products{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.product{
+        height: 480px;
+        width: 35%;
+        padding: 5px;
+        
+    }
+    div.products{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    div.product{
+        width: 37%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .bb{
+        height: 350px;
+    }
+    div.new li { 
+        font-size: 20px;
+    }
+    div.new ul{
+        margin-top: 10px;
+        padding-left: 15px;
+    }
+    div.contact ul{
+        padding-left: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    nav{
+        padding: 10px
+    }
+    ul.Chung > li.phone{
+        display: none;
+    }
+    ul.Chung>li{
+        padding: 2px 20px;
+    }
+    div.logo{
+        margin-left: 10px;
+    }
+    div.main li.link{
+        display: none;
+    }
+    div.main li{
+        width: 250px;
+        padding-right: 80px;
+        margin-left: auto;
+    }
+    div.news{
+        padding-top: 25px;
+    }
+    div.new ul{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    div.nav1{
+        width: 75%;
+    }
+    div.search{
+        display: none;
+    }
+    div.product{
+        width: 70%;
+        margin: auto;
+        margin-top: 45px;
+    }
+    div.news{
+        display: contents;
+    }
+    div.new{
+        width: auto;
+        margin: 15px;
+    }
+    div.new p{
+        text-align: left;
+        margin-top: 20px;
+    }
+    div.new li{
+        font-size: 20px;
+    }
+}
+

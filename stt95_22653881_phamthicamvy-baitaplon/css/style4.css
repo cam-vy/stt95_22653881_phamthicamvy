@@ -1,0 +1,19 @@
+#text{
+    margin-left: 35px;
+}
+div>h3{
+    color: brown;
+    font-weight: 550;
+    margin-top: 20px;
+}
+div>h4{
+    margin-top: 30px;
+    font-size: 25px;
+}
+p>a{
+    text-decoration: none;
+}
+p>a:hover{
+    text-decoration: underline;
+    color: red;
+}

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/logo1.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="javascript/java.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Street-Style</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="image/logo5.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="main">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: aliceblue;">Home</a>
+                </li>
+                <li class="nav-item">
+                    
+                    <a class="nav-link" href="#couple" style="color: aliceblue;">Couple</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shirt" style="color: aliceblue;">T-shirt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pant" style="color: aliceblue;">Pants</a>
+                </li>
+          </ul>
+        </nav>
+        
+        <div id="couple" class="container-fluid bg-success">     
+            <section>
+                
+                <div class="thanh">
+                    <span id="select1">COUPLE</span>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c1.jpg" alt="c1"></div>
+                            </div>
+                        </div>
+                        <p class="name"> Áo thun trắng chữ nổi</p>
+                        <p class="price">215.000đ</p>
+                        <p><button onclick="addToCart('Áo thun trắng chữ nổi', '215.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c2.jpg" alt="c2"></div>
+                            </div>
+                        </div>
+                        <p class="name">Set áo thun đen+quần</p>
+                        <p class="price">400.000đ</p>
+                        <p><button onclick="addToCart('Set áo thun đen+quần', '400.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c3.jpg" alt="c3"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun dài tay kẻ sọc</p>
+                        <p class="price">175.000đ</p>
+                        <p><button onclick="addToCart('Áo thun dài tay kẻ sọc', '175.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <a href="chitiet5.html">
+                                <div class="img"><img src="image/c4.jpg" alt="c4"></div>
+                            </a>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun phông trắng</p>
+                        <p class="price">175.000đ</p>
+                        <p><button onclick="addToCart('Áo thun phông trắng', '175.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c5.jpg" alt="c5"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun+khoác sơmi</p>
+                        <p class="price">355.000đ</p>
+                        <p><button onclick="addToCart('Áo thun+khoác sơmi', '355.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c6.jpg" alt="c6"></div>
+                            </div>
+                        </div>
+                        <p class="name">Couple xám trắng</p>
+                        <p class="price">450.000đ</p>
+                        <p><button onclick="addToCart('Couple xám trắng', '450.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c7.jpg" alt="c7"></div>
+                            </div>
+                        </div>
+                        <p class="name">Đồ đôi(vàng đen)</p>
+                        <p class="price">250.000đ</p>
+                        <p><button onclick="addToCart('Đồ đôi(vàng đen)', '250.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c8.jpg" alt="c8"></div>
+                            </div>
+                        </div>
+                        <p class="name">Sơ mi(hồng)</p>
+                        <p class="price">305.000đ</p>
+                        <p><button onclick="addToCart('Sơ mi(hồng)', '305.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c9.jpg" alt="c9"></div>
+                            </div>
+                        </div>
+                        <p class="name">Đồ đôi đi biển(vàng)</p>
+                        <p class="price">365.000đ</p>
+                        <p><button onclick="addToCart('Đồ đôi đi biển(vàng)', '365.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c10.jpg" alt="c10"></div>
+                            </div>
+                        </div>
+                        <p class="name">Sơ mi(xanh biển)</p>
+                        <p class="price">280.000đ</p>
+                        <p><button onclick="addToCart('Sơ mi(xanh biển)', '280.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c11.jpg" alt="c11"></div>
+                            </div>
+                        </div>
+                        <p class="name">Couple(xanh lam)</p>
+                        <p class="price">390.000đ</p>
+                        <p><button onclick="addToCart('Couple(xanh lam)', '390.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/c12.jpg" alt="c12"></div>
+                            </div>
+                        </div>
+                        <p class="name">Couple(Đỏ đô)</p>
+                        <p class="price">420.000đ</p>
+                        <p><button onclick="addToCart('Couple(Đỏ đô)', '420.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+               
+        </div>
+        <div id="shirt" class="container-fluid bg-success">
+            <section>
+                <div class="thanh">
+                    <span id="select1">T-shirt</span>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <a href="chitiet6.html">
+                                <div class="img"><img src="image/t1.jpg" alt="t1"></div>
+                            </a>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun trắng in hình</p>
+                        <p class="price">125.000đ</p>
+                        <p><button onclick="addToCart('Áo thun trắng in hình', '125.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t2.jpg" alt="t2"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun tím</p>
+                        <p class="price">120.000đ</p>
+                        <p><button onclick="addToCart('Áo thun tím', '120.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t3.jpg" alt="t3"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun phông(đen)</p>
+                        <p class="price">125.000đ</p>
+                        <p><button onclick="addToCart('Áo thun phông(đen)', '125.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t4.jpg" alt="t4"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun hồng</p>
+                        <p class="price">105.000đ</p>
+                        <p><button onclick="addToCart('Áo thun hồng', '105.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t5.jpg" alt="t5"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo phông (đen)</p>
+                        <p class="price">125.000đ</p>
+                        <p><button onclick="addToCart('Áo phông (đen)', '125.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t6.jpg" alt="t6"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo free size(trắng)</p>
+                        <p class="price">170.000đ</p>
+                        <p><button onclick="addToCart('Áo free size(trắng)', '170.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t7.jpg" alt="t7"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo dài tay kẻ sọc</p>
+                        <p class="price">160.000đ</p>
+                        <p><button onclick="addToCart('Áo dài tay kẻ sọc', '160.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t8.jpg" alt="t8"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun phông(xám)</p>
+                        <p class="price">124.000đ</p>
+                        <p><button onclick="addToCart('Áo thun phông(xám)', '124.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t9.jpg" alt="t9"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo Phông(vàng)</p>
+                        <p class="price">135.000đ</p>
+                        <p><button onclick="addToCart('Áo Phông(vàng)', '135.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t10.jpg" alt="t10"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo croptop sọc</p>
+                        <p class="price">180.000đ</p>
+                        <p><button onclick="addToCart('Áo croptop sọc', '180.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t11.jpg" alt="t11"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo thun trắng cổ đỏ</p>
+                        <p class="price">150.000đ</p>
+                        <p><button onclick="addToCart('Áo thun trắng cổ đỏ', '150.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/t12.jpg" alt="t12"></div>
+                            </div>
+                        </div>
+                        <p class="name">Áo kẻ sọc tay ngắn</p>
+                        <p class="price">140.000đ</p>
+                        <p><button onclick="addToCart('Áo kẻ sọc tay ngắn', '140.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="pant" class="container-fluid bg-success">
+            <section>
+                <div class="thanh">
+                    <span id="select1">PANTS</span>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <a href="chitiet7.html">
+                                <div class="img"><img src="image/p1.jpg" alt="p1"></div>
+                            </a>
+                            </div>
+                        </div>
+                        <p class="name">Quần jean ống rộng</p>
+                        <p class="price">255.000đ</p>
+                        <p><button onclick="addToCart('Quần jean ống rộng', '255.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p2.jpg" alt="p2"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần thể thao(xám)</p>
+                        <p class="price">290.000đ</p>
+                        <p><button onclick="addToCart('Quần thể thao(xám)', '290.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p3.jpg" alt="p3"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần túi hộp(trắng)</p>
+                        <p class="price">325.000đ</p>
+                        <p><button onclick="addToCart('Set sơ mi xanh quần tây trắng', '330.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p4.jpg" alt="p3"></div>
+                              
+                            </div>
+                        </div>
+                        <p class="name">Quần tây ống rộng(tím)</p>
+                        <p class="price">275.000đ</p>
+                        <p><button onclick="addToCart('Quần tây ống rộng(tím)', '275.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p5.jpg" alt="p5"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần 9 tấc(vàng)</p>
+                        <p class="price">175.000đ</p>
+                        <p><button onclick="addToCart('Quần 9 tấc(vàng)', '175.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p6.jpg" alt="p6"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần 9 tấc bó(xanh)</p>
+                        <p class="price">190.000đ</p>
+                        <p><button onclick="addToCart('Quần 9 tấc bó(xanh)', '190.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p7.jpg" alt="p7"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần đũi ống rộng</p>
+                        <p class="price">250.000đ</p>
+                        <p><button onclick="addToCart('Quần đũi ống rộng', '250.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p8.jpg" alt="p8"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần ống rộng(trắng)</p>
+                        <p class="price">275.000đ</p>
+                        <p><button onclick="addToCart('Quần ống rộng(trắng)', '275.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p9.jpg" alt="p9"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần jean đùi</p>
+                        <p class="price">185.000đ</p>
+                        <p><button onclick="addToCart('Quần jean đùi', '185.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p10.jpg" alt="p10"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần jean đùi cạp cao</p>
+                        <p class="price">180.000đ</p>
+                        <p><button onclick="addToCart('Quần jean đùi cạp cao', '180.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p11.jpg" alt="p11"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần jean đùi(xanh)</p>
+                        <p class="price">190.000đ</p>
+                        <p><button onclick="addToCart('Quần jean đùi(xanh)', '190.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                    <div class="product">
+                        <div class="bb">
+                            <div class="imgs">
+                                <div class="img"><img src="image/p12.jpg" alt="p12"></div>
+                            </div>
+                        </div>
+                        <p class="name">Quần jean cạp cao</p>
+                        <p class="price">199.000đ</p>
+                        <p><button onclick="addToCart('Quần jean cạp cao', '199.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+
+    <footer>
+        <footer class="last1">
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="news">
+                <div class="new">
+                    <p>Hỗ trợ khách hàng</p>
+                    <ul>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Giới thiệu cửa hàng.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Hệ thống cửa hàng.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chương trình tích điểm.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chính sách đổi trả hàng.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chế độ bảo hành.</a></li>
+                    </ul>
+                </div>
+                <div class="new">
+                    <p>Chính sách vận chuyển</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> &nbsp;Thanh toán trực tiếp tiền hàng và chi phí vận chuyển khi nhận hàng (SHIP COD TOÀN QUỐC).</li>
+                        <li><i class="fas fa-check"></i> &nbsp;Chuyển khoản thanh toán trước toàn bộ tiền hàng và chi phí vận chuyển.</li>
+                    </ul>
+                </div>
+                <div class="new contact">
+                    <p>Liên hệ với chúng tôi</p>
+                    <ul class="lienhe">
+                        <li><i class="fab fa-facebook"></i> &nbsp;<a href="#">FANPAGE</a></li>
+                        <li><i class="fab fa-facebook-messenger"></i> &nbsp;<a href="#">INSTAGRAM</a></li>
+                        <li><i class="fab fa-instagram-square"></i> &nbsp;<a href="#">MESSENGES</a></li>
+                        <li><i class="fas fa-envelope-open"></i> &nbsp;<a href="#">EMAIL</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </footer>
+        <footer class="last2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <p>Performed by CamVy</p>
+        </footer>
+    </footer>
+    <script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $("#myModal").modal();
+          });
+        });
+        function addToCart(productName, price) {
+// Lấy giỏ hàng hiện tại từ localStorage hoặc khởi tạo giỏ hàng mới
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+// Thêm sản phẩm vào giỏ
+cart.push({ name: productName, price: price });
+// Cập nhật lại giỏ hàng vào localStorage
+localStorage.setItem("cart", JSON.stringify(cart));
+// Thông báo cho người dùng
+alert("Đã thêm vào giỏ hàng!");
+}
+</script>
+</body>
+</html>

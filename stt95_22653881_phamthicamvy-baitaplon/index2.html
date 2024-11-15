@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="image/logo1.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="javascript/java.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Vintage</title>
+        <script>
+            window.onscroll = function() {myFunction()};
+            var menu = document.getElementById("myMenu");
+            var sticky = menu.offsetTop;
+        </script>
+    
+    </head>
+    <body>
+        <nav>
+            <div class="nav1">
+                <ul class="Chung">
+                    <li>
+                        <div id="myTab" class="tab">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#select1">NEW ARRIVAL</a>
+                            <a href="#select2">QUICK SALE</a>
+                            <a href="#select3">SELLING PRODUCT</a>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Contact</a>
+                                <div class="dropdown-content">
+                                    <a class="hotline" href="tel:19006089">ĐT: 19006089</a>
+                                    <a class="hotline" href="mailto:Exclusive20@gmail.com">Email: Exclusive20@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ic"><span onclick="openNav()"><i class="fas fa-bars"></i></span></div>
+                    </li>
+                    <li class="phone">
+                        <span>Hotline:</span>
+                        <a href="tel:19006089">19006089</a>
+                    </li>
+                    <li class="phone">
+                        <span>Email:</span>
+                        <a href="mailto:Exclusive20@gmail.com">Exclusive20@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul class="Chung">
+                    <li>
+                        <a id="myBtn" href="login.html"><i class="fas fa-user-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="cart.html"><i class="fas fa-cart-arrow-down"></i></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        <header>
+            <div class="menu" id="myMenu">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="image/logo5.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="main">
+                        <ul>
+                            <li class="link"><a href="index.html">Home</a></li>
+                            <li class="link"><a href="index6.html">Introduce</a></li>
+                            <li class="link"><a href="index2.html">Vintage</a></li>
+                            <div class="h2">
+                                <li class="link">
+                                    <a href="index3.html">Street &ndash; Style</a>
+                                    <div class="level">
+                                        <ul>
+                                            <li><a href="index3.html">Couple</a></li>
+                                            <li><a href="index3.html">Shirt</a></li>
+                                            <li><a href="index3.html">Pants</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+                            <li class="link"><a href="index4.html">Dress</a></li>
+                            <li class="link"><a href="index5.html">Instruct</a></li>
+                            <li>
+                                <div class="search">
+                                        <input type="text" placeholder="Search..." name="search"/>
+                                        <button type="submit" onclick="searchProducts()"><i class="fa fa-search"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        
+    <section>
+        <div class="thanh">
+            <span id="select1">Vintage</span>
+        </div>
+        <div class="products">
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt1.jpg" alt="vt1"></div>
+                    </div>
+                </div>
+                <p class="name">Set áo sơ mi bò quần jeans</p>
+                <p class="price">300.000đ</p>
+                <!-- <p><button><i class="fas fa-cart-arrow-down"></i></button></p> -->
+                <p><button onclick="addToCart('Set áo sơ mi bò quần jeans', '300.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt2.jpg" alt="vt2"></div>
+                    </div>
+                </div>
+                <p class="name">Set sơ mi xanh quần tây trắng</p>
+                <p class="price">330.000đ</p>
+                <!-- <p><button><i class="fas fa-cart-arrow-down"></i></button></p> -->
+                <p><button onclick="addToCart('Set sơ mi xanh quần tây trắng', '330.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <a href="chitiet4.html">
+                            <div class="img"><img src="image/vt3.jpg" alt="vt3"></div>
+                        </a>
+                    </div>
+                </div>
+                <p class="name">Set chân váy caro</p>
+                <p class="price">225.000đ</p>
+                <p><button onclick="addToCart('Set chân váy caro', '225.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt4.jpg" alt="vt4"></div>
+                    </div>
+                </div>
+                <p class="name">Set chân váy hoa nhí</p>
+                <p class="price">275.000đ</p>
+                <!-- <p><button><i class="fas fa-cart-arrow-down"></i></button></p> -->
+                <p><button onclick="addToCart('Set chân váy hoa nhí', '275.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="products">
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt5.jpg" alt="vt5"></div>
+                    </div>
+                </div>
+                <p class="name">Set áo nỉ+chân váy dài</p>
+                <p class="price">365.000đ</p>
+                <p><button onclick="addToCart('Set áo nỉ+chân váy dài', '330.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt6.jpg" alt="vt6"></div>
+                    </div>
+                </div>
+                <p class="name">Set áo len+váy jean</p>
+                <p class="price">350.000đ</p>
+                <p><button onclick="addToCart('Set áo len+váy jean', '350.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt7.jpg" alt="vt7"></div>
+                    </div>
+                </div>
+                <p class="name">Set yếm váy xanh</p>
+                <p class="price">200.000đ</p>
+                <p><button onclick="addToCart('Set yếm váy xanh', '200.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt8.jpg" alt="vt8"></div>
+                    </div>
+                </div>
+                <p class="name">Set áo Gile+quần jeans</p>
+                <p class="price">405.000đ</p>
+                <p><button onclick="addToCart('Set áo Gile+quần jeans', '405.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="products">
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt9.jpg" alt="vt9"></div>
+                    </div>
+                </div>
+                <p class="name">Áo khoác nhung(xám)</p>
+                <p class="price">195.000đ</p>
+                <p><button onclick="addToCart('Áo khoác nhung(xám)', '195.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt10.jpg" alt="vt10"></div>
+                    </div>
+                </div>
+                <p class="name">Set Gile xanh đen</p>
+                <p class="price">280.000đ</p>
+                <p><button onclick="addToCart('Set Gile xanh đen', '280.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt11.jpg" alt="vt11"></div>
+                    </div>
+                </div>
+                <p class="name">Set 3 món Gile len</p>
+                <p class="price">350.000đ</p>
+                <p><button onclick="addToCart('Set 3 món Gile len', '350.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+            <div class="product">
+                <div class="bb">
+                    <div class="imgs">
+                        <div class="img"><img src="image/vt12.jpg" alt="vt12"></div>
+                    </div>
+                </div>
+                <p class="name">Áo khoác vet(sữa)</p>
+                <p class="price">320.000đ</p>
+                <p><button onclick="addToCart('Áo khoác vet(sữa)', '320.000đ')"><i class="fas fa-cart-arrow-down"></i></button></p>
+
+            </div>
+        </div>
+    </section>  
+        
+
+    <footer>
+        <footer class="last1">
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="news">
+                <div class="new">
+                    <p>Hỗ trợ khách hàng</p>
+                    <ul>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Giới thiệu cửa hàng.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Hệ thống cửa hàng.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chương trình tích điểm.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chính sách đổi trả hàng.</a></li>
+                        <li><i class="fas fa-carrot"></i> &nbsp;<a href="#">Chế độ bảo hành.</a></li>
+                    </ul>
+                </div>
+                <div class="new">
+                    <p>Chính sách vận chuyển</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> &nbsp;Thanh toán trực tiếp tiền hàng và chi phí vận chuyển khi nhận hàng (SHIP COD TOÀN QUỐC).</li>
+                        <li><i class="fas fa-check"></i> &nbsp;Chuyển khoản thanh toán trước toàn bộ tiền hàng và chi phí vận chuyển.</li>
+                    </ul>
+                </div>
+                <div class="new contact">
+                    <p>Liên hệ với chúng tôi</p>
+                    <ul class="lienhe">
+                        <li><i class="fab fa-facebook"></i> &nbsp;<a href="#">FANPAGE</a></li>
+                        <li><i class="fab fa-facebook-messenger"></i> &nbsp;<a href="#">INSTAGRAM</a></li>
+                        <li><i class="fab fa-instagram-square"></i> &nbsp;<a href="#">MESSENGES</a></li>
+                        <li><i class="fas fa-envelope-open"></i> &nbsp;<a href="#">EMAIL</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </footer>
+        <footer class="last2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <p>Performed by CamVy</p>
+        </footer>
+    </footer>
+    <script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $("#myModal").modal();
+          });
+        });
+        function addToCart(productName, price) {
+// Lấy giỏ hàng hiện tại từ localStorage hoặc khởi tạo giỏ hàng mới
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+// Thêm sản phẩm vào giỏ
+cart.push({ name: productName, price: price });
+// Cập nhật lại giỏ hàng vào localStorage
+localStorage.setItem("cart", JSON.stringify(cart));
+// Thông báo cho người dùng
+alert("Đã thêm vào giỏ hàng!");
+}
+</script>
+</body>
+</html>
